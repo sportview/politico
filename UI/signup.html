@@ -1,37 +1,57 @@
+
 <html>
-    <head><title>polotico</title>
+    <head><title>Home</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <div class="signup">
-            <form action=# id="register" method="POST">
-                <h1>Voter Details </h1>
-                <p>Surname</p>
-                    <input type="text" name="fname" placeholder="Enter your surname">
-                <p>Middle Name</p>
-                        <input type="text" name="mname" placeholder="Enter your middle name">
-                
-                
-                <p>lastname</p>
-                        <input type="text" name="lname" placeholder="Enter your lastname">
-                <p>Id Number</p>
-                        <input type="text" name="idnum" placeholder="Enter Id number">
-                
-     
-                <p>Phone Number</p>
-                        <input type="text" name="phone" placeholder="Enter phone number">
-                
-                <p>Email Adress </p>
-                        <input type="email" name="" placeholder="Enter email address">
-                 <p>Password </p>
-                        <input type="password" name="" placeholder="password">     
-                
-      
-               <p><input type="submit" value="Register" id="button"></p> 
-        
-
-                
-            </form>
+        <div class="nav" >
+           <P>Politico Elections</P>
+            <div class="menu">
+                <a href="login.html">Login</a>               
+               
+            </div>
         </div>
+       <div class="sign-up">
+
+
+
+ 
+    <h1>Sign Up</h1>
+   
+   <form name="signup" method="POST">
+  
+    <input type="radio" name="admin" value="voter">voter <input type="radio" name="admin" value="admin">Admin
+    <input type="radio" name="admin" value="politician"> Politician
+    <div class="text-box">
+   First name.<input class="sign-box" type="text" placeholder="first name" name="fname">
+   </div>
+
+   <div class="text-box">
+    Last Name<input class="sign-box" type="text" placeholder="Last Name" name="lname" >
+    </div>
+   
+    <div class="text-box">
+    Phone Number<input class="sign-box" type="text" placeholder="phone Number" name="phone" >
+    </div>
+
+    <div class="text-box">
+        Password<input class="sign-box" type="text" placeholder="Password" name="pwd">
+    </div>    
+
+ 
+    <div class="text-box">
+        Confirm Password <input class="sign-box" type="text " placeholder="Password" name="RepeatPwd">
+    </div>    
+
+   <input type="#" class="btn" value="Signup">
+    </form> 
+</div>       
+       
+        <footer>
+            <p>
+             All rights reserved &copy; 2019 Politico Systems
+            </p>
+        <footer>
+        
     </body>
 </html>
