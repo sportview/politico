@@ -31,7 +31,7 @@ body{
 }
 h1{
     margin:0;
-    padding: 0 0 20px;
+    padding: 0 0 10px;
     text-align: center;
     font-size: 30px;
 }
@@ -78,7 +78,7 @@ h1{
 .login input[type="submit"]{
     border: none;
     outline:none;
-    height:40px;
+    height:30px;
     background:#37fb25;
     color:#fff;
     font-size: 18px;
@@ -89,7 +89,7 @@ h1{
 .signup input[type="submit"],input[type="reset"]{
     border: none;
     outline:none;
-    height:40px;
+    height:30px;
     background:#fb2525;
     color:#fff;
     font-size: 18px;
@@ -101,58 +101,329 @@ h1{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color:darkgrey;
+   
 }
 .signup a{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color:darkgrey;
+    
 }
 .menu a{
+    margin: 0;
     text-decoration: none;
-    float: right;    
-    
+    float: right;     
     font-family: sans-serif;
     font-size: 16px;
-    
-
     display:block;
+
    
     
 
 }
 .nav{
     width:100%;
-    height: 50px;
+    height: 40px;
     box-sizing: border-box;
     background:grey;
     font-family: sans-serif;
     font-size: 15px;
-    box-shadow: 50px;
+    box-shadow:0 5px;
    
 }
+/* controls my navbar*/
 .nav a{
    
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     border-radius: 70px;
+    font-size:18px ; 
+
      
-    height: 30px;
-    margin: 10px 50px;
+    
+        margin: 10px 20px;
     display: block;
-    padding: 15px 30px;
+    /*padding: 15px 30px;*/
     color: aqua;
     
     
 }
-.nav p{
-   float: left;
-   font-size:18px ;   
+.nav a li{
+   
+   text-decoration: none;
     
 }
-.footer p{
-    background-color: black;
-    height: 0;
+.nav p{
+   float: left;
+   font-size:18px ; 
+   color: aqua;  
+    
+}
+ 
+
+.govern {
+text-decoration: none;
+margin:50px 50px;
+}
+
+#candindates{
+  
+
+    margin: 15px;
+    float: right;
+    height: 80%;
+    width: 50%;
+}
+#candindates tr td{
+  
+
+    margin: 15px;
+   
+   
+   
+}
+#photo{
+    margin: 15px;
+    float: left;
+    background-image: url(../images/vote.jpg);
+    background-size: 100%;
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+}
+
+footer {
+    /*padding: 15px 15px;*/
+    position:fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
+    background-color:black;
+    color: white;
     text-align: center;
+    
+  }
+  .petition{
+    width: 450px;
+    height: 550px;
+    background:darkgray;
+    color: #fff;
+    top: 50%;
+    left:50%;
+    position:relative;
+    box-sizing:border-box;
+    transform: translate(-50%,-50%);   
+    padding: 70px 30px  
+} 
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+  }
+.petition input[type="text"],input[type="textarea"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height:40px;
+    color:#fff;
+    font-size: 16px; 
+
+}
+.petition p{
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+}
+.petition input[type="submit"]{
+    border: none;
+    outline:none;
+    height:30px;
+    background:black;
+    color:green;
+    font-size: 18px;
+    border-radius: 20px;
+
+
+}
+
+.adding{
+    width: 450px;
+    height: 300px;
+    background:darkgray;
+    color: #fff;
+    top: 50%;
+    left:50%;
+    position:relative;
+    box-sizing:border-box;
+    transform: translate(-50%,-50%);   
+    padding: 70px 30px
+
+}
+#login a{
+    border: none;
+    outline:none;
+    height:30px;
+    background:green;
+    color:white;
+    font-size: 18px;
+    border-radius: 20px;
+
+
+}
+.adding input[type="text"],input[type="textarea"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height:40px;
+    color:#fff;
+    font-size: 16px; 
+
+}
+.adding p{
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+}
+.index img{
+  
+    height: 100%;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+}
+ #button{
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+  }
+  .vote form{
+      text-align: center;
+      margin:0 auto;
+      width: 250px;
+   
+
+    
+  }
+  /* my signup forms 
+pleaas
+  */
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+form{
+    margin:50px 300px;
+    background:darkgrey;
+    padding: 30px;
+}
+form p{
+ text-align: center;
+ font-size: 30px;    
+}
+form input[type="submit"]{
+    text-align: center;
+    font-size: 30px; 
+    margin-right: 30px;
+    background: aqua;   
+   }
+
+
+input[type=chechbox] input[type=password] {
+    width: 40%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  
+
+
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+table{
+    width: 60%;
+    margin:50px 300px;
+}
+td{
+    text-align:center;
+    padding:  30px;
+}
+
+th{
+height: 40px;
+text-align: center;
+
+}
+#addoffice{
+    padding: 100px;
+    margin: 30px 350px;
+}
+#addoffice{
+    font-size:25px ;
+}
+.editparty{
+    margin: 10px;
 }
