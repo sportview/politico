@@ -15,26 +15,17 @@
                         
                      </div>
                  </div>
-                 <div class="sign-up">
-
-
-
- 
-                        <h1>Add Party</h1>
-                       
-                       <form name="signup" method="POST">
-                      
-                    
-                        <div class="text-box">
-                       Party Name.<input class="text-box"  type="text" placeholder="Party Details" name="Party details">
-                       </div>
-                    
-                       <div class="text-box">
-                        Party Bio <textarea class="text-box" rows="5" cols="50"></textarea>
-                        </div>              
-                           
-                        <input type="submit" class="btn" value="Add Party">
-                        </form> 
+                 <div class="party"> 
+                        <form name="party" method="POST">
+                            <h1>Party Details</h1>
+                            <label>Party logo</label>
+                            <input type="file" name="plogo">
+                            <label>Name of the Party</label>
+                            <input type="text" name="partyname">
+                            <label>Party slogan</label>
+                            <input type="text" name="slogan">                    
+                            <input type="submit" name="Add Office">
+                        </form>
                     </div>       
       
         <footer>
