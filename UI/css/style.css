@@ -3,122 +3,268 @@ body{
     padding: 0%;
     margin: 0%;   
     font-family: sans-serif;
-
+    
 }
 .signup{
-    width: 450px;
-    height: 730px;
-    background:darkgray;
-    color: #fff;
-    top: 50%;
-    left:50%;
+    width: 500px;
+    height: 730px;    
+    top: 10%;
+    left:30%;
     position: absolute;
-    box-sizing:border-box;
-    transform: translate(-50%,-50%);   
-    padding: 70px 30px  
-}     
-.login{
-    width: 320px;
-    height: 420px;
-    background:darkgray;
-    color: #fff;
-    top: 50%;
-    left:50%;
-    position: absolute;
-    box-sizing: border-box;
-    transform: translate(-50%,-50%);   
-    padding: 70px 30px  
+    box-sizing:border-box;   
+    
 }
+.candindate{
+    width: 500px;
+    height: 730px;    
+    top: 5%;
+    left:30%;
+    position: absolute;
+    box-sizing:border-box;   
+    
+}
+.candindate h4{
+   text-align: center;  
+    
+}
+.petition h4{
+    text-align: center;  
+     
+ }
+.signup input {
+    font-size: 15px;
+    width:100%;
+    height: 35px;
+    margin: 25px;
+    
+} 
+.candindate input {
+    font-size: 15px;
+    width:100%;
+    height: 35px;
+    margin: 20px;
+    
+}   
+.candindate label{    
+    font-size: 15px;
+    padding: 20px;
+  
+    margin-bottom: 5px;
+
+}  
+    
+.signup select{    
+    font-size: 15px;
+    padding: 5px;
+    margin:25px;
+    height: 35px;
+    width: 100%;
+
+} 
+.candindate select{    
+    font-size: 15px;
+    padding: 5px;
+    margin:25px;
+    height: 35px;
+    width: 100%;
+
+} 
+.petition select{    
+    font-size: 15px;
+    padding: 5px;
+    margin:25px;
+    height: 35px;
+    width: 100%;
+
+}  
+.office input{
+    font-size: 15px;
+    width:100%;
+    height: 40px;
+    margin: 15px;
+    
+} 
+.petition input{
+    font-size: 15px;
+    width:100%;
+    height: 40px;
+    margin: 15px;
+    
+} 
+.office textarea{
+    font-size: 15px;
+    width:100%;
+    height: 40px;
+    margin: 15px;
+    
+    
+}
+.petition textarea{
+    font-size: 15px;
+    width:100%;
+    height: 40px;
+    margin: 15px;
+    
+    
+}  
+.party input{
+    font-size: 15px;
+    width:100%;
+    height: 40px;
+    margin: 15px;
+    
+}  
+.party label{
+    
+    font-size: 15px;
+    
+    padding: 20px;
+
+} 
+.office label{    
+    font-size: 15px;
+    padding: 20px;
+
+} 
+.petition label{    
+    font-size: 15px;
+    padding: 20px;
+
+} 
+.petition{ 
+      
+    width: 320px;
+    height: 420px;       
+    top: 10%;
+    left:35%;
+    font-size: 15px;
+    position: fixed;
+    box-sizing: border-box;
+   /* padding: 70px 30px*/  
+}
+.login{   
+    width: 320px;
+    height: 420px;       
+    top: 20%;
+    left:35%;
+    font-size: 15px;
+    position: fixed;
+    box-sizing: border-box; 
+   /* padding: 70px 30px*/  
+}
+.resetpwd{   
+    width: 320px;
+    height: 420px;       
+    top: 20%;
+    left:35%;
+    font-size: 15px;
+    position: fixed;
+    box-sizing: border-box; 
+   /* padding: 70px 30px*/  
+}
+.resetpwd input{
+    font-size: 15px;
+    width:100%;
+    height: 50px;
+    margin: 20px;
+    
+} 
+
+.login input{
+    font-size: 15px;
+    width:100%;
+    height: 50px;
+    margin: 25px;
+    
+}  
+.login label{
+    
+    font-size: 20px;
+    padding: 20px;
+
+} 
+.resetpwd a{
+    text-decoration: none;    
+    font-size: 25px;
+    padding: 20px;
+    
+
+}   
+.resetpwd label{
+    
+    font-size: 20px;
+    padding: 10px; 
+
+} 
+.resetpwd h1{
+    font-style: italic;
+    font-size: 25px
+} 
+.petition h1{
+    font-style: italic;
+    font-size: 25px
+} 
+.login{   
+    width: 320px;
+    height: 420px;       
+    top: 20%;
+    left:35%;
+    font-size: 15px;
+    position: fixed;
+    box-sizing: border-box; 
+   /* padding: 70px 30px*/  
+}
+.result{   
+    width: 100%;
+    height: 420px;       
+    top: 10%;
+    left:30%;
+    font-size: 15px;
+    position: fixed;
+    box-sizing: border-box; 
+   /* padding: 70px 30px*/  
+}
+
+.party{ 
+    float:right;  
+    width: 320px;
+    height: 250px;       
+    top: 10%;
+    left:35%;
+    font-size: 15px;
+    position: fixed;
+    box-sizing: border-box; 
+   /* padding: 70px 30px*/  
+}
+.party h1{
+
+    font-style: italic;
+    font-size: 25px;
+}
+
+.office h1{
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 25px;
+
+}
+
 h1{
     margin:0;
-    padding: 0 0 20px;
+    padding: 0 0 10px;
     text-align: center;
     font-size: 30px;
 }
-.login p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-.signup p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-.login input{
-    width: 100%;
-    margin-bottom:20px;
 
-}
-.signup input{
-    width: 100%;
-    margin-bottom:20px;
-
-}
-.login input[type="text"],input[type="password"]{
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height:40px;
-    color:#fff;
-    font-size: 16px; 
-
-}
-.signup input[type="text"],input[type="password"],input[type="email"]{
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height:40px;
-    color:#fff;
-    font-size: 16px; 
-
-}
-.login input[type="submit"]{
-    border: none;
-    outline:none;
-    height:40px;
-    background:#37fb25;
-    color:#fff;
-    font-size: 18px;
-    border-radius: 20px;
-
-
-}
-.signup input[type="submit"],input[type="reset"]{
-    border: none;
-    outline:none;
-    height:40px;
-    background:#fb2525;
-    color:#fff;
-    font-size: 18px;
-    border-radius: 20px;
-
-
-}
-.login a{
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color:darkgrey;
-}
-.signup a{
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color:darkgrey;
-}
 .menu a{
+    margin: 0;
     text-decoration: none;
-    float: right;    
-    
+    float: right;     
     font-family: sans-serif;
-    font-size: 16px;
-    
-
+    font-size: 10px;    
+    border-radius: 5%;
     display:block;
-   
+    color:white;  
     
 
 }
@@ -126,33 +272,271 @@ h1{
     width:100%;
     height: 50px;
     box-sizing: border-box;
-    background:grey;
+    background:lightslategray;
     font-family: sans-serif;
-    font-size: 15px;
-    box-shadow: 50px;
+    box-shadow:0 5px;
    
 }
+/* controls my navbar*/
 .nav a{
    
-    box-sizing: border-box;
-    border-radius: 70px;
-     
-    height: 30px;
-    margin: 10px 50px;
+    /*box-sizing: border-box;*/
+    border-radius:10%;
+    font-size:15px ;
+    border: black;   
+    
+    margin: 10px 20px;
     display: block;
-    padding: 15px 30px;
+    /*padding: 15px 30px;*/
     color: aqua;
     
     
 }
-.nav p{
-   float: left;
-   font-size:18px ;   
+.nav a li{   
+   text-decoration: none;
     
 }
-.footer p{
-    background-color: black;
-    height: 0;
+.nav p{
+   float: left;
+   font-size:18px ; 
+   color: aqua;  
+    
+}
+ 
+
+
+.reqresult{
+    top:20%;
+    left:20%;
+}
+.reqresult select{
+    padding: 10px;
+}
+.reqresult input{
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.reqresult label{
+    right:20%;
+
+    
+}
+
+footer {
+    /*padding: 15px 15px;*/
+    position:fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
+    background-color:black;
+    color: white;
     text-align: center;
+    
+  }
+  .office form{ 
+    
+    width: 320px;
+    height: 420px;       
+    top: 10%;
+    left:35%;
+    font-size: 15px;
+    position: fixed;
+    box-sizing: border-box;
+   /* padding: 70px 30px*/  
+}
+.editparties{ 
+       
+        width: 100%;
+        height: 420px;       
+        top: 10%;
+        left:15%;
+        font-size: 15px;
+        position: fixed;
+        box-sizing: border-box; 
+      
+}
+.editparties table{
+    width: 100%;
+    height: 300px;
+    border: darkgrey;
+    top: 15%;
+    left:15%;
+    font-size: 15px;
+    position: fixed;
+    box-sizing: border-box; 
+    
+
+}
+.editparties table th{
+    
+text-align: left;    
+}
+.editparties table td{
+    padding: 10px;   
+    }
+.editparties h1{
+        text-align: center;  
+        }
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+  }
+body{
+    background:lightcyan;
+    /*background-image: url(../images/come.jpg);*/
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+ 
+ 
+  td a{
+      font-size: 15px;
+      text-decoration: none;
+  }
+  .profile table{
+      width:550px;
+    
+  }
+  .profile table td{
+    text-align: left;
+  
+}
+.profile table th{
+    text-align: left;
+  
+}
+  .vhistory {
+    padding-top: 5px;
+    padding-left: 15px;
+    width:550px;
+    margin-right: 100px;
+    
+  
+}
+.vhistory {
+    padding-top: 5px;
+   
+    
+  
+}
+.vhistory td{
+    
+        padding: 10px;   
+    
+}
+.vhistory .profile h1{
+    text-align: center;
+    font-size: 25px;
+    
+  
+}
+.profile td{
+   
+        padding: 10px;   
+      
+}
+.profile h1{
+    text-align:left;
+    margin-left: 35px;
+    font-size: 25px;
+    
+  
+}
+.vhistory .profile th{
+    border: 1px solid black ;
+    font-size: 15px;
+    text-align:center;
+    height: 25px;
+    
+  
+}
+
+.result td{    
+    text-align:left;
+    padding: 15px;
+   
+}
+
+
+/*table{
+    width: 60%;
+    margin:10px 200px;
+}
+
+th{
+    padding-right: 15px;
+background:darkgrey;   
+height:25px;
+text-align: center;
+}*/
+.dataparty h1{
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    
+    }
+.dataparty tr   {
+    padding: 35px;
+    
+}
+.profile{
+    float: left
+}
+.vhistory {
+    
+    float: right;
+}
+.dataparty {
+    width: 320px;
+    height: 420px;
+    float: right;
+  
+}
+
+
+.dataparty tr td{
+    padding: 15px;
+    
+   
+ 
+}
+.vote{
+    width: 320px;
+    height: 300px;      
+    top: 15%;
+    left:35%;
+    font-size: 15px;
+    position: fixed;
+    box-sizing: border-box; 
+   /* padding: 70px 30px*/  
+}
+.vote label{
+       
+    font-size: 15px;
+    padding:4px;
+}   
+.vote select{    
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+
+} 
+.vote input{
+    width: 100%;       
+    font-size: 15px;
+    padding:10px;
+}
+.vote h4{
+    font: bolder;
+    font-style: italic;
+    font-size: 15px;
 }
