@@ -1,5 +1,11 @@
 from flask import Flask,jsonify,make_response,request
 app=Flask(__name__)
+
+from api.v1.views.party import partyblue
+#from api.v1.views.Office.office import officeblue
+app.register_blueprint(partyblue,url_prefix="/api/v1")
+#app.register_blueprint(officeblue,url_prefix="/api/v1")
+
 from api.v1.views.party.party import partyblue
 #from api.v1.views.Office.office import officeblue
 app.register_blueprint(partyblue,url_prefix="/api/v1")
@@ -12,6 +18,7 @@ def all_routes():
 
 
     return make_response(jsonify(routes), 200)
+
 
 
     

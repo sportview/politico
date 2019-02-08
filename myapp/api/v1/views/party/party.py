@@ -1,6 +1,10 @@
 from flask import Flask,Blueprint,jsonify,request,make_response
 import json
+
+from myapp.api.v1.models.party.party import Parties
+
 from api.v1.models.party.party import Parties
+
 
 partyblue=Blueprint("/parties",__name__)
 
