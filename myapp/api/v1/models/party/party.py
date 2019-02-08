@@ -48,4 +48,4 @@ class Parties:
             if p["partyid"]==party_id:                                   
                 return p
 
-
+    
