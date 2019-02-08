@@ -22,5 +22,13 @@ class Parties:
     #get all parties
     def getparties(self):
         return self.partylist  
-        
+
+        #update parties  
+    def update_party(self,party_id):
+       for p in self.partylist:
+              if p["partyid"]==party_id:                                              
+                    self.partyname="partyname"
+                    self.logourl="logourl"
+                    self.hqaddress="hqaddress"                  
+                    return self.partylist    
 
