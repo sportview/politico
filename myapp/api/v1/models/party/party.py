@@ -31,4 +31,13 @@ class Parties:
                     self.logourl="logourl"
                     self.hqaddress="hqaddress"                  
                     return self.partylist    
+    
+    # delete political party
+    def deleteparty(self, party_id):
+        for party in partylist:
+            if party["partyid"]==party_id:
+                self.partylist.remove(party)
+                return self.partylist              
 
+            return self.partylist     
+    

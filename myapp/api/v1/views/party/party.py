@@ -34,4 +34,13 @@ def update_party_name(party_id):
     urllogo=data['logourl']
     updated_party=Parties().update_party(name,address,urllogo)
 
-    return make_response(jsonify(updated_party,{"status":200,"message":"success"}))     
+    return make_response(jsonify(updated_party,{"status":200,"message":"success"}))
+
+#delete political party
+@partyblue.route('/parties/<int:party_id>', methods=['DELETE'])
+def deleteparty(party_id):
+    if party_id=="" :
+        return make_response(jsonify(party_id,{"status":401,"message":"Invalid Party Id"}))
+    else:
+        party=Parties().deleteparty(party_id)   
+        return make_response(jsonify(party,{"status":200,"message":"party successfully deleted"}))
