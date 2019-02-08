@@ -25,3 +25,4 @@ def addparty():
 def getparties(): 
     plist=Parties().getparties()
     return make_response(jsonify(plist,{"status":200,"message":""})) 
+  
