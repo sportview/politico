@@ -34,9 +34,9 @@ class Parties:
     
     # delete political party
     def deleteparty(self, party_id):
-        for p in partylist:
-            if p["partyid"]==party_id:
-                self.partylist.remove(p)
+        for party in partylist:
+            if party["partyid"]==party_id:
+                self.partylist.remove(party)
                 return self.partylist              
 
             return self.partylist     
