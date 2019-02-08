@@ -44,3 +44,9 @@ def deleteparty(party_id):
     else:
         party=Parties().deleteparty(party_id)   
         return make_response(jsonify(party,{"status":200,"message":"party successfully deleted"}))
+
+#get one specifi party
+@partyblue.route('/parties/<int:party_id>',methods=["GET"])
+def get_one_party(party_id):
+    party=Parties().get_one_party(party_id)
+    return make_response(jsonify(party,{"status":200,"message":"success"}))

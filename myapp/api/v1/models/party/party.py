@@ -41,3 +41,11 @@ class Parties:
 
             return self.partylist     
     
+    
+       #get one by party id   
+    def get_one_party(self,party_id):
+        for p in self.partylist:
+            if p["partyid"]==party_id:                                   
+                return p
+
+
