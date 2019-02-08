@@ -18,3 +18,4 @@ class Parties:
         }
         self.partylist.append(party)
         return party
+
