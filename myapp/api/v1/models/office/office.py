@@ -21,4 +21,15 @@ class Office:
 
     # get all political offices
     def get_offices(self):
-        return self.officelist  
+        return self.officelist 
+
+
+    #get one office
+    def get_one_office(self,office_id):
+          
+        for office in self.officelist:
+        
+            if office["office_id"]==office_id:                                   
+                return office
+        return "office not found"   
+ 

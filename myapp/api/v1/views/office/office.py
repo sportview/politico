@@ -22,3 +22,10 @@ def addoffice():
 def get_offices(): 
     data=Office().get_offices() 
     return make_response(jsonify(data,{"status":200,"message":"officess created successfully"}))    
+
+@officeblue.route('/office/<int:office_id>',methods=["GET"])
+def get_one_office(office_id):
+    if office_id=="":
+        return make_response(jsonify({"status":404,"message":"Invalid office id "}))
+    data=Office().get_one_office(office_id)
+    return make_response(jsonify(data,{"status":200,"message":"success"}))
