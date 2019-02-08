@@ -18,3 +18,7 @@ class Office:
         }
         self.officelist.append(newoffice)
         return newoffice
+
+    # get all political offices
+    def get_offices(self):
+        return self.officelist  

@@ -16,3 +16,9 @@ def addoffice():
         return make_response(jsonify(data,{"status":200,"message":"office successfully created"}))
     else:
         return make_response(jsonify({"status":404,"message":"office not created"}))
+
+ #get all offices from my dictionary
+@officeblue.route('/office',methods=['GET'])
+def get_offices(): 
+    data=Office().get_offices() 
+    return make_response(jsonify(data,{"status":200,"message":"officess created successfully"}))    
