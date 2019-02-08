@@ -19,3 +19,8 @@ class Parties:
         self.partylist.append(party)
         return party
 
+    #get all parties
+    def getparties(self):
+        return self.partylist  
+        
+
