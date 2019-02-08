@@ -24,5 +24,14 @@ def addparty():
 @partyblue.route('/parties',methods=['GET'])
 def getparties(): 
     plist=Parties().getparties()
-    return make_response(jsonify(plist,{"status":200,"message":""})) 
-  
+    return make_response(jsonify(plist,{"status":200,"message":"success"})) 
+
+@partyblue.route('/parties/<int:party_id>', methods=['PATCH'] )
+def update_party_name(party_id):
+    data=request.get_json()
+    name=data['partyname']
+    address=data['hqaddress']
+    urllogo=data['logourl']
+    updated_party=Parties().update_party(name,address,urllogo)
+
+    return make_response(jsonify(updated_party,{"status":200,"message":"success"}))     
