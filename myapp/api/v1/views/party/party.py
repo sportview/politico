@@ -13,8 +13,9 @@ def add_party():
                 name=data['party_name']
                 address=data['hq_address']
                 logo=data['logo_url']
-                new_party=Parties(name,address,logo)                                     
-                return  new_party.create_party() 
+                new_party=Parties(name,address,logo)                          
+              
+                return  new_party.create_party()
           #get all parties from my dictionary
 @partyblue.route('/parties',methods=['GET'])
 def get_parties():
