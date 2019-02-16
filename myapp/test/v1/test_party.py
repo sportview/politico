@@ -83,6 +83,4 @@ class TestParties(Base):
 
         self.assertEqual(data['status'], 200)
         self.assertEqual(data['message'], 'party successfully updated')
-        
-
-   
+          
