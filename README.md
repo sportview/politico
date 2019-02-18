@@ -1,33 +1,19 @@
-                                              
-																																														
-																																														# Politico
+# Politico
 The general elections are around the corner,hence its a political season.Get into the mood of the season and help build a platform which both the politicians and citizens can use. Politico enables citizens give their mandate to politicians running for different government offices while building trust in the  process through transparency.
 
-                                              # Requirements to install
+# Requirements to install
  Python
+
+# Installation steps
+.clone the repository from Github from cmd run git clone https://github.com/sportview/politico/develop
+.change directory to myapp cd myapp
+.create a virtual environment virtualenv venv
+.Activate the virtual environment for windows cd venv\scripts\activate 
  
-                                              # Installation steps
-.clone the repository from Github
+ # Start the server and run the applicationp ython app.py
 
-from cmd run git clone https://github.com/sportview/politico/develop
-
-.change directory to myapp
-
-cd myapp
-
-.create a virtual environment
-
- virtualenv venv
-
-.Activate the virtual environment for windows
-  
-  cd venv\scripts\activate 
-  
-                                                # Start the server and run the applicationp ython app.py
-
-                                                API Endpoints
----------------------------------------------------------------------------------------
-                                                    API Endpoints
+                                            
+                         API Endpoints
 ---------------------------------------------------------------------------------------
 Method	|      Route	|      Functionality
 ---------------------------------------------------------------------------------------
