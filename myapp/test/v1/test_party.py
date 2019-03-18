@@ -1,16 +1,20 @@
-from .base_test import Base
+from api.config import create_app
+import unittest
+from flask import Flask, jsonify,json
+from api.v1.models.party.party import Parties
 
 
 
-class TestParties(Base):
+class Test_Parties(unittest.TestCase):
     """ Tests for all parties endpoints """
 
     def setUp(self):   
+        self.app=create_app("testing").test_client() 
 
         self.new_party = {
             "party_name": "ODM",           
             "hq_address": "yawezekana",
-            "logo_url": "url"
+            "logo_url": "www.logo.url"
         }
 
   
@@ -18,24 +22,22 @@ class TestParties(Base):
     # tests POST method creating parties
     def test_add_party(self):
         """ Tests for creating parties """
-        response = self.client.post('/api/v1/parties', json=self.new_party)
+        response = self.app.post('/api/v1/parties', json=self.new_party)
         data = response.get_json()
-        self.assertEqual(data['status'], 201)
+        self.assertEqual(data['status code'], 201)
         self.assertEqual(data['message'], 'Party successfully created')
 
 
    
     def test_get_parties(self):
         """ Tests when get request made to api/v1/parties """
-
-        res = self.client.post('/api/v1/parties', json=self.new_party)
-        self.new_party['name'] = 'Other name'
-        res = self.client.post('/api/v1/parties', json=self.new_party)
+        response = self.app.post('/api/v1/parties', json=self.new_party)     
+      
         self.new_party['name'] = 'Other Other name'
-        res = self.client.post('/api/v1/parties', json=self.new_party)
+        response = self.app.post('/api/v1/parties', json=self.new_party)
 
-        res = self.client.get('/api/v1/parties')
-        data = res.get_json()
+        response = self.app.get('/api/v1/parties')
+        data = response.get_json()
 
         self.assertEqual(data['status'], 200)
         self.assertEqual(data['message'], "Request successfull")
@@ -45,12 +47,12 @@ class TestParties(Base):
 
     # tests for GET a specific party
     def test_get_one_party(self):
-        """ test to get a specific party by id /parties/<int:party_id> """
+        """ test to get a specific party by id api/v1/parties/<int:party_id> """
 
-        self.client.post('/api/v1/parties', json=self.new_party)
+        self.app.post('/api/v1/parties', json=self.new_party)
 
-        res = self.client.get('/api/v1/parties/1')
-        data = res.get_json()
+        response = self.app.get('/api/v1/parties/1')
+        data = response.get_json()
 
         self.assertEqual(data['status'], 200)
         self.assertEqual(data['message'], 'Request successfully')
@@ -61,10 +63,9 @@ class TestParties(Base):
     def test_delete_party(self):
         """ Tests delete by passing party id on url /parties/<int:id> """
 
-        self.client.post('/api/v1/parties', json=self.new_party)
-
-        res = self.client.delete('/api/v1/parties/1')
-        data = res.get_json()
+        self.app.post('/api/v1/parties', json=self.new_party)
+        response = self.app.delete('/api/v1/parties/1')
+        data = response.get_json()
 
         self.assertEqual(data['status'], 200)
         self.assertEqual(data['message'], 'party successfully deleted')
@@ -76,11 +77,14 @@ class TestParties(Base):
     def test_update_party(self):
         """ Tests PATCH in Parties /parties/<int:party_id>"""
 
-        self.client.post('/api/v1/parties', json=self.new_party)
+        self.app.post('/api/v1/parties', json=self.new_party)
 
-        res = self.client.patch('/api/v1/parties/1/Rainbow')
-        data = res.get_json()
+        response = self.app.patch('/api/v1/parties/1')
+        
+        data = response.get_json()
 
         self.assertEqual(data['status'], 200)
         self.assertEqual(data['message'], 'party successfully updated')
-          
+        
+
+   
