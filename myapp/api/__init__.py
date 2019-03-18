@@ -1,20 +1,20 @@
-'''Creating app for different environments'''
-import os
+""" setting up the database files """
+from flask_sqlalchemy import SQLAlchemy
+from flask import Flask
+import psycopg2
 
-from flask import Flask, Blueprint
-from instance.config import app_config
-from api.v1.views.party.party import Parties
-from api.v1.views.office.office import Office
-from api.v1.views.party.party import partyblue
-from api.v1.views.office.office import officeblue
+app = Flask(__name__)
 
-def create_app(config_name):    
-    "instattiate the flask app"
-    app = Flask(__name__)
-    app.config.from_object(app_config[config_name])  
+class ConnectDb():
+    """connecting to the database docstring"""
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://Dev:dogcat123@localhost/politico'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config['SECRET_KEY'] = "ijustdiditagain"
+    db = SQLAlchemy(app)
 
-    # register blueprints
-    app.register_blueprint(partyblue)
-    app.register_blueprint(officeblue)    
-    return app
-   
+    """connecting to the database"""
+    conn = psycopg2.connect(database='politico',
+                            user='postgres',
+                            password='dogcat123',
+                            host='localhost')
+    cur = conn.cursor()
