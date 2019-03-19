@@ -13,7 +13,7 @@ class ConnectDb():
     db = SQLAlchemy(app)
 
     """connecting to the database"""
-    conn = psycopg2.connect(database='politico',
+    conn = psycopg2.connect(database='politico',g
                             user='postgres',
                             password='dogcat123',
                             host='localhost')
